@@ -12,6 +12,9 @@
 
   <!-- Navbar -->
   <header class="navbar" id="navbar">
+    <div class="logo">
+      <img src="img/logo-rectangular.png" alt="Logo de Un Día Más" />
+    </div>
     <div class="redes-img">
       <a href="https://facebook.com" target="_blank">
         <img src="img/redes/facebook.png" alt="Facebook" />
@@ -25,12 +28,6 @@
       <a href="https://youtube.com" target="_blank">
         <img src="img/redes/youtube.png" alt="YouTube" />
       </a>
-    </div>
-    <div class="logo">
-      <img src="img/logo-rectangular.png" alt="Logo de Un Día Más" />
-    </div>
-    <div class="icono-header">
-      <img src="img/icono-header.png" alt="Icono" />
     </div>
   </header>
 
@@ -60,7 +57,7 @@
   <section class="videos-section">
     <h2>Videos</h2>
     <div class="videos">
-      <iframe width="360" height="215" src="https://www.youtube.com/embed/WLkJfAVTXqY" title="YouTube video 1" frameborder="0" allowfullscreen></iframe>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/3YxaaGgTQYM" title="YouTube video 1" frameborder="0" allowfullscreen></iframe>
       <iframe width="360" height="215" src="https://www.youtube.com/embed/tAGnKpE4NCI" title="YouTube video 2" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
@@ -86,23 +83,14 @@
     </div>
   </footer>
 
-  <!-- Scroll efecto navbar -->
   <script>
+    // Navbar scroll efecto
     window.addEventListener("scroll", function () {
       const navbar = document.getElementById("navbar");
-      if (window.scrollY > 50) {
-        navbar.classList.add("scroll");
-      } else {
-        navbar.classList.remove("scroll");
-      }
+      navbar.classList.toggle("scroll", window.scrollY > 50);
     });
   </script>
 
 </body>
 </html>
-
-
-
-
-
 
