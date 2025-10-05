@@ -41,15 +41,16 @@ a {
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
+.logo {
+  flex-grow: 1;
+  text-align: center;
+}
+
 .logo img {
   height: 60px;
 }
 
-.icono-header img {
-  height: 40px;
-}
-
-/* Redes como botones */
+/* Redes sociales como botones */
 .redes-img {
   display: flex;
   gap: 15px;
@@ -185,5 +186,3 @@ iframe {
     flex-wrap: wrap;
   }
 }
-
-
